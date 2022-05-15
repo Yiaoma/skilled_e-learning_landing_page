@@ -1,5 +1,13 @@
-import React from 'react';
+import { Home } from 'views';
+import { ThemeProvider } from 'styled-components';
+import { theme } from 'themes';
+import Style from './style';
 
-const App = () => <h1>Hello World!</h1>;
+const App = () => (
+  <ThemeProvider theme={theme}>
+    <Style />
+    <Home />
+  </ThemeProvider>
+);
 
 export default App;

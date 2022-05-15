@@ -14,6 +14,14 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
       },
+      {
+        test: /\.(png|jpe?g|gif|webp)$/,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack', 'url-loader'],
+      },
     ],
   },
   plugins: [
@@ -24,10 +32,10 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-      '@assets': path.resolve(__dirname, 'src/assets'),
-      '@components': path.resolve(__dirname, 'src/components'),
-      '@views': path.resolve(__dirname, 'src/views'),
+      assets: path.resolve(__dirname, 'src/assets'),
+      views: path.resolve(__dirname, 'src/views'),
+      components: path.resolve(__dirname, 'src/components'),
+      themes: path.resolve(__dirname, 'src/themes'),
     },
   },
   devtool: 'source-map',
