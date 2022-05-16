@@ -11,4 +11,10 @@ export default createGlobalStyle<{ theme: ThemeType }>`
     box-sizing: border-box;
     font-family: ${({ theme }) => theme.fontFamily}
   }
+
+  body{
+    min-height: 100vh;
+    background-image: ${({ theme }) =>
+      `linear-gradient(${theme.colors.white}, ${theme.colors.offWhite})`}
+  }
 `;
