@@ -36,6 +36,8 @@ module.exports = {
       views: path.resolve(__dirname, 'src/views'),
       components: path.resolve(__dirname, 'src/components'),
       themes: path.resolve(__dirname, 'src/themes'),
+      containers: path.resolve(__dirname, 'src/containers'),
+      hooks: path.resolve(__dirname, 'src/hooks'),
     },
   },
   devtool: 'source-map',

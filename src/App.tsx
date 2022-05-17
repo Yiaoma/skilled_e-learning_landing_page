@@ -6,7 +6,7 @@ import Style from './style';
 const App = () => (
   <ThemeProvider theme={theme}>
     <Style />
-    <Home />
+    {/* <Home /> */}
   </ThemeProvider>
 );
 
