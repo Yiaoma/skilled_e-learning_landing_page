@@ -1,9 +1,10 @@
 import { FC } from 'react';
 
 interface ButtonProps {
+  className?: string;
   children: string;
 }
 
-export const Button: FC<ButtonProps> = ({ children }) => (
-  <button>{children}</button>
+export const Button: FC<ButtonProps> = ({ className, children }) => (
+  <button className={className}>{children}</button>
 );
