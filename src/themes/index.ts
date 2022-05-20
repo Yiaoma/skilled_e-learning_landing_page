@@ -18,8 +18,12 @@ export const theme = {
     offWhite: '#F0F1FF',
     gray: '#83869A',
     darkBlue: '#13183F',
+    lightBlue: '#666CA3',
     darkPink: '#F74780',
     lightPink: '#FFA7C3',
+    violet: '#F02AA6',
+    blue: '#4851FF',
+    orange: '#FF6F48',
   },
   fontSizes: {
     xLarge: '56px',
