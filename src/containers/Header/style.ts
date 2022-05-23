@@ -5,7 +5,11 @@ export const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 16px 56px;
+  padding: 40px 16px 0px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 export const StyledContent = styled.div`
@@ -14,6 +18,10 @@ export const StyledContent = styled.div`
   align-items: flex-start;
   row-gap: 24px;
   margin-bottom: 46px;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
 `;
 
 export const StyledH1 = styled(H1)`
@@ -48,4 +56,7 @@ export const StyledButton = styled(Button)`
   }
 `;
 
-export const StyledImg = styled(Img)``;
+export const StyledImg = styled(Img)`
+  width: 100%;
+  height: auto;
+`;

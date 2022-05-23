@@ -5,6 +5,11 @@ export const StyledCard = styled.div`
   position: relative;
   background-color: ${({ theme }) => theme.colors.white};
   padding: 32px 16px;
+  border-radius: 10px;
+
+  @media (min-width: 768px) {
+    width: 40%;
+  }
 `;
 
 export const StyledIcon = styled(Img)`

@@ -7,6 +7,7 @@ import {
   StyledButton,
 } from './style';
 import heroImageUrl from 'assets/image-hero-mobile.webp';
+import tabletHeroImageUrl from 'assets/image-hero-tablet.webp';
 
 export const Header = () => (
   <StyledHeader>
@@ -19,7 +20,7 @@ export const Header = () => (
       <StyledButton>Get Started</StyledButton>
     </StyledContent>
     <StyledImg
-      src={heroImageUrl}
+      src={tabletHeroImageUrl}
       alt="Lady working on her laptop while having hot beverage."
     />
   </StyledHeader>
